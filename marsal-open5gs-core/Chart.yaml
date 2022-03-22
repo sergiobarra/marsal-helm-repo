@@ -1,5 +1,5 @@
 apiVersion: v2
-name: open5gs-core-helm
+name: marsal-open5gs-core
 description: Helm chart for Open5GS core deployment in MARSAL (all pods to be deployed in marsal-vim-worker1)
 
 # A chart can be either an 'application' or a 'library' chart.

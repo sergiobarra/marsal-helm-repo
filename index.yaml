@@ -3,7 +3,7 @@ entries:
   example-chart-1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-18T09:05:58.673083724Z"
+    created: "2022-03-22T14:21:36.181451143Z"
     description: A Helm chart for Kubernetes
     digest: 5b484321827c8666895e27bbd11c7115c99ebba34586edc425afd6f6857eca6a
     name: example-chart-1
@@ -14,7 +14,7 @@ entries:
   example-chart-2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-18T09:05:58.673605432Z"
+    created: "2022-03-22T14:21:36.182884329Z"
     description: A Helm chart for Kubernetes
     digest: 310ca6b22cf381d71695388a110e4d0a1970344a09365ebe268b2e086362f71b
     name: example-chart-2
@@ -22,4 +22,16 @@ entries:
     urls:
     - charts/example-chart-2-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-18T09:05:58.672338586Z"
+  marsal-open5gs-core:
+  - apiVersion: v2
+    appVersion: 2.4.0
+    created: "2022-03-22T14:21:36.184636766Z"
+    description: Helm chart for Open5GS core deployment in MARSAL (all pods to be
+      deployed in marsal-vim-worker1)
+    digest: d486a19716aa07763b984295b3365b139678474ab38543c41c4a46acb2c3c6e0
+    name: marsal-open5gs-core
+    type: application
+    urls:
+    - charts/marsal-open5gs-core-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-03-22T14:21:36.179360465Z"
