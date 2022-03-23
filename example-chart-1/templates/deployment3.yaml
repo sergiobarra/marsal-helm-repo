@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sergiooooo
+  name: sergicasca
   labels:
     {{- include "example-chart-1.labels" . | nindent 4 }}
 spec:
@@ -31,7 +31,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: sbarrachina/open5gs
+          image: sbarrachina/amarisoft-websocket
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
