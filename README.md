@@ -38,6 +38,3 @@ helm repo add marsal-helm-repo https://sergiobarra.github.io/marsal-helm-repo/
 helm search repo marsal-helm-repo
 helm install example2 marsal-helm-repo/example-chart-2
 ```
-
-
-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

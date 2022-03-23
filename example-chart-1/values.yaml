@@ -2,6 +2,37 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+# Open5GS stuff
+# ---------------
+open5gs:
+  image:
+    repository: sbarrachina/open5gs
+    tag: "v2.4.0"
+    pullPolicy: IfNotPresent
+
+webui:
+  image:
+    repository: registry.gitlab.com/infinitydon/registry/open5gs-webui
+    pullPolicy: IfNotPresent
+    tag: "v2.2.2"
+  
+# Data Network Names
+dnn: internet
+
+amf:
+  mcc: '001'
+  mnc: '01'
+  tac: '1'
+
+# Primary/Native kubernetes interface
+k8s:
+ interface: enp5s0
+# ---------------
+
+
+
+
+
 replicaCount: 1
 
 image:
@@ -10,11 +41,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
-open5gs:
-  image:
-    repository: sbarrachina/open5gs
-    tag: "v2.4.0"
-    pullPolicy: Always
+
+
 
 imagePullSecrets: []
 nameOverride: ""
