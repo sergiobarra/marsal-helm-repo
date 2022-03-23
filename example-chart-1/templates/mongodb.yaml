@@ -34,6 +34,8 @@ spec:
       - name: mongodb-persistent-storage
         persistentVolumeClaim:
           claimName: mongodb-pv-claim
+      nodeSelector:
+        kubernetes.io/hostname: {{ .Values.nodes.cluster }}
 ---
 kind: PersistentVolume
 apiVersion: v1

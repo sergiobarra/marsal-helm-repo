@@ -10,6 +10,12 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
+open5gs:
+  image:
+    repository: sbarrachina/open5gs
+    tag: "v2.4.0"
+    pullPolicy: Always
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

@@ -17,8 +17,18 @@ Create helm charts and push to github repo
 helm create example-chart-1
 helm create example-chart-2
 
+helm create marsal-open5gs
+
+helm package open5gs/
+
+helm install --dry-run debug open5gs/
+
+
 mv example-chart-1 example-chart-2 charts/
 helm repo index .
+
+git add .
+git commit -m "Commit message"
 git push
 ```
 
@@ -28,3 +38,6 @@ helm repo add marsal-helm-repo https://sergiobarra.github.io/marsal-helm-repo/
 helm search repo marsal-helm-repo
 helm install example2 marsal-helm-repo/example-chart-2
 ```
+
+
+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
