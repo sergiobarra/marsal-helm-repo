@@ -31,7 +31,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: sbarrachina/amarisoft-websocket
+          image: "sbarrachina/amarisoft-websocket:v1.0"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http

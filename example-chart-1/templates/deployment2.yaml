@@ -31,7 +31,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: sbarrachina/open5gs
+          image: "sbarrachina/open5gs:v2.4.0"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
