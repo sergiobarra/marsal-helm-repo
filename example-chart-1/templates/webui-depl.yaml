@@ -102,6 +102,3 @@ spec:
           value: "production"  
         - name: HOSTNAME
           value: '0.0.0.0'  
-
-      nodeSelector:
-        kubernetes.io/hostname: {{ .Values.nodes.cluster }}
