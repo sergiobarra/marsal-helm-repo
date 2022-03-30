@@ -3,7 +3,7 @@ entries:
   example-chart-1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-30T11:16:49.19478905Z"
+    created: "2022-03-30T13:59:39.294311626Z"
     description: A Helm chart for Kubernetes
     digest: 13b1bd1fea48e6b2cb8bbb365f9d1a8b2f03b44347a7ee06f0ca3f350edae78a
     name: example-chart-1
@@ -14,7 +14,7 @@ entries:
   example-chart-2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-30T11:16:49.196556075Z"
+    created: "2022-03-30T13:59:39.294761446Z"
     description: A Helm chart for Kubernetes
     digest: 310ca6b22cf381d71695388a110e4d0a1970344a09365ebe268b2e086362f71b
     name: example-chart-2
@@ -25,14 +25,26 @@ entries:
   marsal-open5gs:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2022-03-30T11:16:49.198925036Z"
+    created: "2022-03-30T13:59:39.295985521Z"
     description: MARSAL deployment of Open5GS v2.4.0 with one core UPF and two edge
       UPFs + Amarisoft monitoring. Assumes specific k8s cluster deployment with hardcoded
       worker node names since some pods are deployed in specific nodes on purpose.
-    digest: 017e3aa1b0307c0c1bb2c16a80cb92202bf0539891ac43daf606e5610efeea6d
+    digest: d0d8c91faad4ec857a755bc22f4a70a6c249b6f33958ac06c189e29ecf830d13
     name: marsal-open5gs
     type: application
     urls:
-    - charts/marsal-open5gs-0.0.1.tgz
-    version: 0.0.1
-generated: "2022-03-30T11:16:49.190794498Z"
+    - charts/marsal-open5gs-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-03-30T13:59:39.295356389Z"
+    description: MARSAL deployment of Open5GS v2.4.0 with one core UPF and one edge
+      UPF + Amarisoft monitoring. Assumes specific k8s cluster deployment with hardcoded
+      worker node names since some pods are deployed in specific nodes on purpose.
+    digest: 54bb2ac85cc40abaf4344e8a1e8b1b3174237ca36942bebe71b6592f11140732
+    name: marsal-open5gs
+    type: application
+    urls:
+    - charts/marsal-open5gs-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-03-30T13:59:39.29324529Z"
