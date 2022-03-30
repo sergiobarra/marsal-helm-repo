@@ -1,1 +1,0 @@
-Helm chart for Open5GS core all-in-one

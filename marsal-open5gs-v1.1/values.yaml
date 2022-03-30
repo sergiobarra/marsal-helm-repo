@@ -47,6 +47,8 @@ webui:
 
 # Data Network Names
 dnn: internet
+dnn2: mecnet1
+dnn3: mecnet2
 
 amf:
   mcc: '001'
@@ -55,7 +57,10 @@ amf:
 
 # Where to deploy the NFs
 nodes:
-  cluster: 'marsal-vim-worker1'
+  cluster: 'o5gs-worker-1'
+  edge1: 'o5gs-worker-2'
+  edge2: 'o5gs-worker-3'
+  monitor: 'o5gs-moni'
 
 # Primary/Native kubernetes interface
 k8s:

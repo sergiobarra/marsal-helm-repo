@@ -25,6 +25,10 @@ data:
         subnet:
          - addr: 10.45.0.1/16
            dnn: {{ .Values.dnn }}
+         - addr: 10.46.0.1/16
+           dnn: {{ .Values.dnn2 }}
+         - addr: 10.47.0.1/16
+           dnn: {{ .Values.dnn3 }}
         dns:
           - 8.8.8.8
           - 8.8.4.4
@@ -38,3 +42,7 @@ data:
       pfcp:
         - name: upf-svc
           dnn: {{ .Values.dnn }}
+        - name: upfedge1-svc
+          dnn: {{ .Values.dnn2 }}
+        - name: upfedge2-svc
+          dnn: {{ .Values.dnn3 }}
